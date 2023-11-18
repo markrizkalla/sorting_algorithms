@@ -26,6 +26,8 @@ size_t calc_gap(size_t size)
  */
 void shell_sort(int *array, size_t size)
 {
+	if (array == NULL || size == 1)
+		return;
 	size_t h = calc_gap(size);
 
 	while (h > 0)
